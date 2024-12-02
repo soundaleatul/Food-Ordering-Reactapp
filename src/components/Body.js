@@ -59,7 +59,7 @@ const Body = () => {
         //   "https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif"
         // ),
         // backgroundImage:new URL("https://as1.ftcdn.net/v2/jpg/02/05/87/60/1000_F_205876015_hYYs7ugqoU8QAobSS3TbnGQ92qyS5gEc.jpg"),
-        backgroundColor:"#0f0f0f",
+        backgroundColor:"#f0f0f0",
         height: "auto",
         width:"auto",
         backgroundPosition: "center",
