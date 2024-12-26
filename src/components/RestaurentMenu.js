@@ -9,17 +9,22 @@ const RestaurentMenu = () => {
   const resInfo = useRestaurantMenu(resId);
 
   const [showIndex , setShowIndex] = useState(null);
+ 
 
   if (resInfo == null) return <Shimmer />;
+  const menuCard = resInfo?.cards.find(
+    (card) => card?.groupedCard?.cardGroupMap?.REGULAR
+  );
+  const menu = menuCard?.groupedCard?.cardGroupMap?.REGULAR?.cards || [];
 
   const { name, cuisines, costForTwoMessage } =
     resInfo?.cards[2]?.card?.card?.info;
-  const { itemCards } =
-    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
+  // const { itemCards } =
+  //   resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
 
   // console.log(resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
   const categories =
-    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+   menu.filter(
       (c) =>
         c.card?.card?.["@type"] ==
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
