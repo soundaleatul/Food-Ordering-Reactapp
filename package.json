@@ -25,6 +25,7 @@
   },
   "Browserslist": [
     "last 2 chrome versions",
-    "last 2 firefox versions"
+    "last 2 firefox versions",
+    "cover 100%, not chrome < 15, not and_chr < 15, not safari < 5, not ios_saf < 5, not firefox < 45, not and_ff < 45, not edge < 12, not ie < 9, not ie_mob < 9, not opera < 12.1, not op_mob < 12.1, not op_mini < 12.1, not android < 4.4"
   ]
 }
