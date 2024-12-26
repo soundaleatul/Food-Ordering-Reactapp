@@ -2,12 +2,12 @@
   "name": "foodorderapp",
   "version": "1.0.0",
   "description": "Online Food Order Application",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
-  "author": "Ashok",
+  "author": "Atul",
   "license": "ISC",
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
